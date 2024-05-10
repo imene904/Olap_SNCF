@@ -1,0 +1,123 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bd43ee77-2ba3-4121-b1f5-449c6148df03" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Controles Trains</ID>
+  <Name>Controles Trains</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Controles Trains</DataSourceID>
+  <Schema>
+    <xs:schema id="Controles_x0020_Trains" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Controles_x0020_Trains" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6d5fc5ea-b21d-49de-b46a-f67f4e33bd14">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_faits_controls" msprop:design-time-name="0b6ea981-bcb0-4055-be34-1c158779689e" msprop:DbTableName="faits_controls" msprop:FriendlyName="faits_controls" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="controleId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="372d9f09-4811-430c-8500-ca4c877b1b8b" msprop:DbColumnName="controleId" msprop:FriendlyName="controleId" type="xs:int" />
+                  <xs:element name="dateID" msprop:design-time-name="cb414607-2852-4939-a9df-162dbaa8a893" msprop:DbColumnName="dateID" msprop:FriendlyName="dateID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="UICID" msprop:design-time-name="7ae2c397-1d20-4cb9-965a-26f362ffc6a3" msprop:DbColumnName="UICID" msprop:FriendlyName="UICID" type="xs:long" minOccurs="0" />
+                  <xs:element name="nombre_observation" msprop:design-time-name="d94b38bd-f74a-45f5-9172-183f3fc35a60" msprop:DbColumnName="nombre_observation" msprop:FriendlyName="nombre_observation" type="xs:long" minOccurs="0" />
+                  <xs:element name="taux_conformite" msprop:design-time-name="5ce79b85-26bd-4c87-bc6d-566ca8c8894a" msprop:DbColumnName="taux_conformite" msprop:FriendlyName="taux_conformite" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dimUic" msprop:design-time-name="86c0491e-07bb-4fe3-a2c4-3e945e2acc74" msprop:DbTableName="dimUic" msprop:FriendlyName="dimUic" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="UICID" msprop:design-time-name="36e6ea3b-332f-47d6-873b-b84c7d2380c4" msprop:DbColumnName="UICID" msprop:FriendlyName="UICID" type="xs:long" />
+                  <xs:element name="code_operation" msprop:design-time-name="51bd34d9-fe66-479c-b880-967ce3f8974e" msprop:DbColumnName="code_operation" msprop:FriendlyName="code_operation" type="xs:long" />
+                  <xs:element name="nom_gare" msprop:design-time-name="fbd572e1-7b74-452a-955c-83c8e077476d" msprop:DbColumnName="nom_gare" msprop:FriendlyName="nom_gare">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dimDate" msprop:design-time-name="30d4defd-98bf-46cc-a3ee-969b8fd6e4b4" msprop:DbTableName="dimDate" msprop:FriendlyName="dimDate" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="dateID" msprop:design-time-name="e4bb729e-d371-464d-aa80-c16241fbb243" msprop:DbColumnName="dateID" msprop:FriendlyName="dateID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Date" msprop:design-time-name="e533c97c-1283-4dbe-aaf0-cfa0d55d291a" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="year" msprop:design-time-name="3e891f2f-52bd-42eb-bbdb-0cc2a9b17f34" msprop:DbColumnName="year" msprop:FriendlyName="year" type="xs:int" minOccurs="0" />
+                  <xs:element name="jour" msprop:design-time-name="e941336c-39dc-4cd6-9d27-51ae857c9916" msprop:DbColumnName="jour" msprop:FriendlyName="jour" type="xs:int" minOccurs="0" />
+                  <xs:element name="mois" msprop:design-time-name="77dd5771-3e66-4a53-8de9-7af1f0e3658d" msprop:DbColumnName="mois" msprop:FriendlyName="mois" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_faits_controls" />
+          <xs:field xpath="controleId" />
+        </xs:unique>
+        <xs:unique name="dbo_dimUic_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dimUic" />
+          <xs:field xpath="UICID" />
+        </xs:unique>
+        <xs:unique name="dbo_dimDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dimDate" />
+          <xs:field xpath="dateID" />
+        </xs:unique>
+        <xs:keyref name="FK__faits_con__dateI__05A3D694" refer="dbo_dimDate_Constraint1">
+          <xs:selector xpath=".//dbo_faits_controls" />
+          <xs:field xpath="dateID" />
+        </xs:keyref>
+        <xs:keyref name="FK__faits_con__UICID__0697FACD" refer="dbo_dimUic_Constraint1">
+          <xs:selector xpath=".//dbo_faits_controls" />
+          <xs:field xpath="UICID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Controles_x0020_Trains xmlns="" />
+  </Schema>
+</DataSourceView>
